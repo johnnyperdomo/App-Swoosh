@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHL-XL-OlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="394"/>
+            <point key="canvasLocation" x="195.6521739130435" y="432.88043478260875"/>
         </scene>
         <!--LeagueVC-->
         <scene sceneID="AkF-W8-MMG">
@@ -266,6 +266,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="Xcd-oD-J79"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dm-UD-zCu">
                                 <rect key="frame" x="20" y="30" width="44" height="33"/>
@@ -275,7 +278,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="Fcu-8W-lOl" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="JZ0-VP-egd"/>
+                                    <segue destination="Fcu-8W-lOl" kind="unwind" unwindAction="unwindFromDesiredLeagueWithGoBack:" id="A3k-MI-A2m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,6 +301,9 @@
                             <constraint firstItem="Bf1-z0-eNa" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leadingMargin" id="wda-pX-Nsf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="DAp-ag-V91" kind="show" identifier="skillVCSegue" id="nSH-hk-Ovl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L75-5o-SeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Fcu-8W-lOl" userLabel="Exit" sceneMemberID="exit"/>
