@@ -85,19 +85,15 @@
                             <constraint firstItem="hhG-iV-a9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrU-3x-g0x"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="Tve-K6-ZdL" id="PRP-im-jiR"/>
-                        <outlet property="swoosh" destination="x8x-XB-FNY" id="aKO-Wr-Dof"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-62" y="-239"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="VNS-5z-VvL">
             <objects>
-                <viewController id="DAp-ag-V91" sceneMemberID="viewController">
+                <viewController id="DAp-ag-V91" customClass="SkillVC" customModule="Swoosh_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLd-SQ-bGI"/>
                         <viewControllerLayoutGuide type="bottom" id="Ysi-bG-4T6"/>
@@ -189,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="335" y="394"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="AkF-W8-MMG">
             <objects>
-                <viewController id="kTA-Rw-UwA" sceneMemberID="viewController">
+                <viewController id="kTA-Rw-UwA" customClass="LeagueVC" customModule="Swoosh_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wic-OI-53v"/>
                         <viewControllerLayoutGuide type="bottom" id="kQ4-1c-ddX"/>
