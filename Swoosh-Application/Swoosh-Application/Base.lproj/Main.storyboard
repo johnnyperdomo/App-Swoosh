@@ -193,7 +193,7 @@
                         <viewControllerLayoutGuide type="top" id="wic-OI-53v"/>
                         <viewControllerLayoutGuide type="bottom" id="kQ4-1c-ddX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="F8n-Q9-4o0">
+                    <view key="view" contentMode="scaleToFill" id="F8n-Q9-4o0" customClass="L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -231,6 +231,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="Ogc-nw-zGu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-pG-WmK" customClass="BorderButton" customModule="Swoosh_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="374" height="50"/>
@@ -242,6 +245,9 @@
                                         <state key="normal" title="Women">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="aQb-sA-cKC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp5-Kd-UwK" customClass="BorderButton" customModule="Swoosh_Application" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="374" height="50"/>
@@ -253,21 +259,24 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="H9x-fL-TrG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50N-wu-oFn" customClass="BorderButton" customModule="Swoosh_Application" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vd-3s-YRX" customClass="BorderButton" customModule="Swoosh_Application" customModuleProvider="target">
                                 <rect key="frame" x="20" y="666" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39865301720000001" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="com-dA-Gfa"/>
+                                    <constraint firstAttribute="height" constant="50" id="PkI-fg-H68"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNextTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="Xcd-oD-J79"/>
+                                    <action selector="onNextTapped:" destination="kTA-Rw-UwA" eventType="touchUpInside" id="QFp-MK-R0f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dm-UD-zCu">
@@ -284,13 +293,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9Vd-3s-YRX" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leadingMargin" id="1ke-vd-ysY"/>
                             <constraint firstItem="89r-Wk-WGq" firstAttribute="top" secondItem="Bf1-z0-eNa" secondAttribute="bottom" constant="47" id="5h5-7W-0tT"/>
-                            <constraint firstItem="kQ4-1c-ddX" firstAttribute="top" secondItem="50N-wu-oFn" secondAttribute="bottom" constant="20" id="8mG-wK-nFK"/>
+                            <constraint firstItem="9Vd-3s-YRX" firstAttribute="trailing" secondItem="F8n-Q9-4o0" secondAttribute="trailingMargin" id="8vS-zM-bx3"/>
                             <constraint firstItem="Bf1-z0-eNa" firstAttribute="top" secondItem="wic-OI-53v" secondAttribute="bottom" constant="20" id="Afd-4C-htp"/>
                             <constraint firstItem="3fa-y9-sUF" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leading" id="ODo-Ng-l0t"/>
-                            <constraint firstItem="50N-wu-oFn" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leadingMargin" id="Puh-gp-i5u"/>
+                            <constraint firstItem="kQ4-1c-ddX" firstAttribute="top" secondItem="9Vd-3s-YRX" secondAttribute="bottom" constant="20" id="cne-Us-kNg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bf1-z0-eNa" secondAttribute="trailing" id="d28-k1-mNC"/>
-                            <constraint firstItem="50N-wu-oFn" firstAttribute="trailing" secondItem="F8n-Q9-4o0" secondAttribute="trailingMargin" id="eqd-xf-Rih"/>
                             <constraint firstItem="89r-Wk-WGq" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leadingMargin" id="fsQ-BG-WND"/>
                             <constraint firstItem="9Dm-UD-zCu" firstAttribute="leading" secondItem="F8n-Q9-4o0" secondAttribute="leadingMargin" id="g0m-hT-SZX"/>
                             <constraint firstAttribute="trailing" secondItem="3fa-y9-sUF" secondAttribute="trailing" id="iLO-Zl-sEz"/>
@@ -302,6 +311,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="9Vd-3s-YRX" id="Q6Y-7u-rJI"/>
                         <segue destination="DAp-ag-V91" kind="show" identifier="skillVCSegue" id="nSH-hk-Ovl"/>
                     </connections>
                 </viewController>
