@@ -13,7 +13,7 @@ _Used for learning purposes_
 - **Pass data between view controllers using ```UIStoryboardSegue```**
 
 ### Credits
-Devslopes Coredata Tuts
+Devslopes Tuts
 
 ## License
 Standard MIT [License](https://github.com/johnnyperdomo/App-Swoosh/blob/master/LICENSE) 
