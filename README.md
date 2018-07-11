@@ -1,3 +1,19 @@
 # App-Swoosh
+Simple app for passing data with segue in Swift 4   
+_Used for learning purposes_
 
-This is not a real project. Made only for testing/ learning purposes.
+## Preview
+![Alt Text](https://media.giphy.com/media/1wX7AkFoC1ArcInqL9/giphy.gif)
+
+**Built with**
+- Ios 10
+- Xcode 8 
+
+## Features:
+- **Pass data between view controllers using ```UIStoryboardSegue```**
+
+### Credits
+Devslopes Coredata Tuts
+
+## License
+Standard MIT [License](https://github.com/johnnyperdomo/App-Swoosh/blob/master/LICENSE) 
