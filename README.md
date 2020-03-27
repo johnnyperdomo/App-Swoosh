@@ -3,7 +3,7 @@ Simple app for passing data with segue in Swift 4
 _Used for learning purposes_
 
 ## Preview
-![Alt Text](https://media.giphy.com/media/1wX7AkFoC1ArcInqL9/giphy.gif)
+![Alt Text](https://media.giphy.com/media/YRnJe4XU00NVwZzE1Z/giphy.gif)
 
 **Built with**
 - Ios 10
